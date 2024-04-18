@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="true" name="Suite" thread-count ="2">
+  <test name="Parallel Testing">
+    <classes>
+      <class name="com.learn.testNG.ParallelTesting"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

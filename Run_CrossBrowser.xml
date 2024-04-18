@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+  <test name="Test">
+	  <parameter name ="browser" value ="chrome"/>
+       <parameter name ="usname" value ="Admin"/>
+       <parameter name ="pword" value ="admin123"/>
+    <classes>
+      <class name="com.learn.testNG.CrossBrowserTesting"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
