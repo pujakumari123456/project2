@@ -1,0 +1,37 @@
+package com.learn.selenium;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Beginner_2_Assigenment {
+
+	public static void main(String[] args) {
+		//Beginner_2_Open_Godaddy.com_and_Print_its_Pagetitle
+		try {
+			// 1.Launch browser of your choice say., Firefox, chrome etc. 
+			 ChromeOptions opt =new ChromeOptions();	
+			 opt.addArguments("--remote-allow-origins=*");
+			 WebDriverManager.chromedriver().setup();
+			 WebDriver driver = new ChromeDriver(opt);
+			//2.https://www.godaddy.com/en-in
+			driver.get("https://www.godaddy.com/en-in");
+			//3. Maximize or set size of browser window.
+			driver.manage().window().maximize();
+			//get title of page and print it
+			String Title =driver.getTitle();
+			System.out.println("Title of the page is  :"+Title);
+			//get URl of current page and print it
+			String curl=driver.getCurrentUrl();
+			System.out.println("current url page is :"+curl);
+			//6. Close browser.
+			driver.close();
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+
+	}
+
+}
